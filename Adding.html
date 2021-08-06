@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    number1 : <input type="text"  id="num1">
+    number2 : <input type="text" id="num2">
+    <button onclick="myfunction()">Submit</button>
+    <p id="output">the output of the result is </p>
+    
+</body>
+<script>
+    function myfunction()
+    {
+        var first,second;
+        var num1=parseInt(document.getElementById("num1").value);
+        var num2=parseInt(document.getElementById("num2").value);
+        document.getElementById("output").innerHTML=num1+num2;
+        
+        
+    }
+</script>
+</html>
